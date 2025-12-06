@@ -1,4 +1,4 @@
-<h1> HTML / CSS / JS Little project V.2 </h1>
+<h1> HTML / CSS / JS Little project V.3 </h1>
 
 <p>This project was marked by the teacher to practice how to make a website with HTML, CSS and JavaScript.</p>
 
@@ -32,6 +32,11 @@
 - [Badges](https://shields.io/badges) - Used to create the badge
 - [Deivchoi](https://www.youtube.com/watch?v=OuoLQiXPitk) - Used to see how to create a responsive header
 - [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Used for learn flexbox
+- [Manz.dev](https://lenguajecss.com/animaciones/transiciones/que-son/) - Used for learn transitions
+- [Paradigma](https://www.paradigmadigital.com/dev/transiciones-animaciones-css/) - Used for learn transitions and animations
+- [DaniCode](https://www.youtube.com/watch?v=hKzIiS6Q1tE) - Tutorial how to make CRUD
+- [OnlineCurse](https://www.youtube.com/watch?v=qVBAM-eBPh0) - Tutorial how to make CRUD
+- [Medium](https://medium.com/@wdevalamin/javascript-crud-operation-6e1d960cc8f8) - Extra CRUD tutorial I've used
 
 <h2>Authors ✒️</h2>
 
