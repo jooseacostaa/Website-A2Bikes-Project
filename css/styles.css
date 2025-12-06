@@ -1,0 +1,517 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  background: linear-gradient(to bottom, #fcfcfc, #ebebeb);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44rem;
+  border-radius: 2rem;
+  z-index: 10;
+  padding: 12px 25px;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-out, top 0.5s ease-out;
+}
+
+.header-hidden {
+  transform: translateX(100vw);
+  transition: transform 0.5s ease-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-header {
+  list-style: none;
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+  background-color: transparent;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/ducati.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  width: 100%;
+  text-align: center;
+  color: #eee;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 30px 50px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.under-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0;
+}
+
+.item-container-div {
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.item-container-div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.bike-img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  height: 30rem;
+  transition: transform 0.3s ease;
+}
+
+.item-container-div:hover .bike-img {
+  transform: scale(1.05);
+}
+
+.bike-name {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.what-is-a2-section {
+  padding: 80px 20px;
+}
+
+.a2-text-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.a2-text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.a2-text-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.contact-form-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  visibility: hidden;
+  font-size: 0.9rem;
+}
+
+.about-me-section {
+  padding: 80px 20px;
+}
+
+.about-me-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-me-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+footer {
+  background: linear-gradient(to top, #050505, #1d2130);
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-social h3 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #f1f1f1;
+}
+
+.footer-social .social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+  color: #ccc;
+  font-size: 2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+#scroll-to-top-btn:hover {
+  background-color: #007bff;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* --------- Sizes --------- */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  header {
+    width: 90%;
+    top: 1rem;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .under-section {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+
+  .item-container-div {
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .bike-img {
+    height: 25rem;
+  }
+
+  .a2-text-container h2 {
+    font-size: 2rem;
+  }
+
+  .a2-text-container p {
+    font-size: 1.1rem;
+  }
+
+  .about-me-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-me-container p {
+    font-size: 1.1rem;
+  }
+
+  footer .footer-social {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-social h3 {
+    font-size: 1.6rem;
+  }
+
+  footer .footer-social .social-icons a {
+    font-size: 1.8rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  header {
+    width: 100%;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+    padding: 15px;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .list-header {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .under-section {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .item-container-div {
+    height: auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .bike-img {
+    height: 20rem;
+  }
+
+  .bike-name {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .a2-text-container h2 {
+    font-size: 2rem;
+  }
+
+  .a2-text-container p {
+    font-size: 1rem;
+  }
+
+  .contact-form-section {
+    padding: 40px 10px;
+  }
+
+  .contact-form {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .contact-form-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .about-me-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-me-container p {
+    font-size: 1rem;
+  }
+
+  footer .footer-social {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-social h3 {
+    font-size: 1.5rem;
+  }
+
+  footer .footer-social .social-icons a {
+    font-size: 1.6rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+
+}

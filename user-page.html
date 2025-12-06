@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/styles-login.css">
+</head>
+
+<body>
+
+
+  <section id="product-form" class="contact-form-section">
+    <h2>¿Qué moto quieres comprar?</h2>
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="product-name">Nombre de la moto</label>
+        <input type="text" id="product-name" name="product-name"
+          placeholder="Ingresa el nombre de la moto que quieres comprar">
+        <span id="product-name-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <div class="form-group">
+        <label for="product-description">Descripción de la moto</label>
+        <input type="text" id="product-description" name="product-description"
+          placeholder="Ingresa una descripción de la moto">
+        <span id="product-description-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <div class="form-group">
+        <label for="product-price">Precio del Producto</label>
+        <input type="number" id="product-price" name="product-price" placeholder="Ingresa el precio">
+        <span id="product-price-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Agregar Producto</button>
+    </form>
+  </section>
+
+  <section id="product-list" class="contact-form-section">
+    <h2>Lista de Productos</h2>
+    <ul id="product-list-ul">
+    </ul>
+  </section>
+
+  <script src="js/form-crud.js"></script>
+  <script src="js/device-form-validation.js"></script>
+
+</body>
+
+</html>

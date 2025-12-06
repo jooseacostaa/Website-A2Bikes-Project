@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Noviembre</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <section class="hero">
+    <header>
+      <nav>
+        <ul>
+          <li class="list-header"><a class="nav-link" href="#top-bikes">Top Motos</a></li>
+          <li class="list-header"><a class="nav-link" href="#a2-definition">¿Qué es el carnet A2?</a></li>
+          <li class="list-header"><a class="nav-link" href="#contact-form">Contacto</a></li>
+          <li class="list-header"><a class="nav-link" href="#about-me">Sobre mi</a></li>
+          <li class="list-header"><a class="nav-link" href="user-page.html" target="_blank">Comprar Moto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-text reveal">
+      <h1>Mejores Motos Carnet A2</h1>
+      <p>En esta página encontrarás las mejores motos para el carnet A2 para este 2025 / 2026</p>
+    </div>
+  </section>
+
+  <section id="top-bikes" class="under-section">
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/mt07-2025.jpg" alt="mt07">
+      <h2 class="bike-name">Yamaha-MT07</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/yamaha-r7.jpg" alt="r7">
+      <h2 class="bike-name">Yamaha-R7</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/gsx-8s-blanco.jpg" alt="gsx8s">
+      <h2 class="bike-name">Suzuki-GSX8S</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/gsx8r-25.jpg" alt="gsx8r">
+      <h2 class="bike-name">Suzuki-GSX8R</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/honda-cbr-r-blanco.jpg" alt="cbr650">
+      <h2 class="bike-name">Honda CBR 650R</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/street.triple-blanco.jpg" alt="street-triple">
+      <h2 class="bike-name">Triumph Street Triple</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/z-650.jpg" alt="z650">
+      <h2 class="bike-name">Kawasaki Z-650</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/ktm-390.jpg" alt="ktm390">
+      <h2 class="bike-name">KTM 390 Duke</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/703-rr.jpg" alt="zontes703">
+      <h2 class="bike-name">Zontes 703RR</h2>
+    </div>
+    <div class="item-container-div reveal">
+      <img class="bike-img" src="img/ducati-monster-25.jpg" alt="ducatimonster">
+      <h2 class="bike-name">Ducati Monster</h2>
+    </div>
+  </section>
+
+  <section id="a2-definition" class="what-is-a2-section">
+    <div class="a2-text-container reveal">
+      <h2>¿Qué es el carnet A2?</h2>
+      <p>El carnet A2 es el permiso de conducir que habilita para conducir motocicletas con una potencia máxima de 35 kW
+        (aproximadamente 47 CV), con una relación potencia/peso no superior a (0,2) kW/kg. Se puede obtener a partir
+        de los 18 años y es el permiso intermedio entre el A1 y el A. <br> Características principales del carnet A2
+        Potencia y peso: Permite conducir motocicletas de hasta (35) kW de potencia. La moto original no debe superar
+        los (70) kW (95) CV antes de ser limitada. <br> Cilindrada: No hay limitación de cilindrada, lo que significa
+        que se pueden conducir motos de diferentes tamaños, siempre que cumplan las restricciones de potencia. <br> Edad
+        mínima: Se puede obtener a partir de los 18 años de edad.<br> Relación con otros permisos: El carnet A2 es un
+        paso intermedio y permite acceder posteriormente al carnet A, que no tiene limitaciones de potencia. En algunos
+        casos, la obtención del A2 implica la obtención del permiso A1.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact-form" class="contact-form-section reveal">
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+        <span id="name-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+        <span id="email-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <div class="form-group">
+        <label for="favorite-bike">¿Qué moto te gustaría que forme parte del top?</label>
+        <textarea id="favorite-bike" name="favorite-bike" rows="4"
+          placeholder="Escribe aquí la moto que te gustaría añadir"></textarea>
+        <span id="favorite-bike-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <div class="form-group">
+        <label for="current-bike">¿Qué moto tienes?</label>
+        <input type="text" id="current-bike" name="current-bike" placeholder="Escribe aquí tu moto">
+        <span id="current-bike-error" class="error-message">* Campo requerido</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+  </section>
+
+  <section id="about-me" class="about-me-section">
+    <div class="about-me-container reveal">
+      <h2>Sobre mí</h2>
+      <p>
+        Me llamo José Acosta soy estudiante de 1º Desarrollo de aplicaciones multiplataforma, esta página web es un proyecto de clase para una asignatura llamada Lenguaje de marcas y sistemas de gestión de información, en este proyecto el profesor nos ha dejado decidir el tema para realizar la página web, teniendo que cumplir numerados requisitos y utilizando HTML, CSS y JavaScript. <br> Esta es la primera página web que hago, me está sirviendo para aprender mucho.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+
+    <div class="footer-social">
+      <h3>Mis redes sociales</h3>
+      <div class="social-icons">
+        <a href="https://github.com/jooseacostaa" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Proyecto Noviembre. Todos los derechos reservados.</p>
+    </div>
+
+  </footer>
+
+  <button id="scroll-to-top-btn" title="Volver arriba">
+  <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="js/buttom-script.js"></script>
+  <script src="js/device-form-validation.js"></script>
+  <script src="js/reveal-animation.js"></script>
+  <script src="js/header-animation.js"></script>
+
+</body>
+
+</html>
