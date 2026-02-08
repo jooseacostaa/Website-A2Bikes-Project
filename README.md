@@ -1,4 +1,4 @@
-# 🏍️ Top A2 Motorcycles — Web Project
+# Top A2 Motorcycles — Web Project
 
 ![Status](https://img.shields.io/badge/STATUS-FINISHED-red)
 
