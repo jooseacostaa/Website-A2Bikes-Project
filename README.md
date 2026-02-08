@@ -1,47 +1,112 @@
-<h1> HTML / CSS / JS Little project V.3 </h1>
+Top A2 Motorcycles — Web Project
 
-<p>This project was marked by the teacher to practice how to make a website with HTML, CSS and JavaScript.</p>
+Small web project developed as part of an academic assignment to practice HTML, CSS, and JavaScript fundamentals.
 
-<p>It contains a project of a website that the teacher has let us choose what we want to make it about.</p>
+The goal of the project was to design and build a complete website from scratch.
+The topic was freely chosen, and this project focuses on a Top Motorcycles for the A2 License, showcasing models, layout design, and basic interactivity.
 
-<img width="125" height="125" src= "https://img.shields.io/badge/STATUS-FINISHED-red">
+📌 Project Overview
 
-<h2>Getting Started 🚀</h2>
+This website demonstrates:
 
-<p>These instructions will give you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on deploying the project on a live system.</p>
+Semantic HTML structure
 
-<p>Clone project for the first time (Git need to be installed on your computer, and execute this commands in the terminal)</p>
+Responsive layouts with CSS
 
-    git clone ( url project )
+Basic JavaScript functionality
 
-<p>After having modified the repository</p>
+CRUD logic implemented on the client side
 
-    git pull origin master
+UI inspiration from modern web designs
 
-<h2>Technologies used 🛠️</h2>
-<ul>
-  <li>Visual Studio Code</li>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JAVASCRIPT</li>
-</ul>
+It is intended for learning and practice purposes, not as a production-ready application (aunque oye, dignísimo 😄).
 
-<h2>Acknowlegment 🖇️</h2>
+🚀 Getting Started
 
-- [Website for an AI Product](https://dribbble.com/shots/24633864-Website-for-an-AI-Product) - Used as inspiration
-- [Badges](https://shields.io/badges) - Used to create the badge
-- [Deivchoi](https://www.youtube.com/watch?v=OuoLQiXPitk) - Used to see how to create a responsive header
-- [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Used for learn flexbox
-- [Manz.dev](https://lenguajecss.com/animaciones/transiciones/que-son/) - Used for learn transitions
-- [Paradigma](https://www.paradigmadigital.com/dev/transiciones-animaciones-css/) - Used for learn transitions and animations
-- [DaniCode](https://www.youtube.com/watch?v=hKzIiS6Q1tE) - Tutorial how to make CRUD
-- [OnlineCurse](https://www.youtube.com/watch?v=qVBAM-eBPh0) - Tutorial how to make CRUD
-- [Medium](https://medium.com/@wdevalamin/javascript-crud-operation-6e1d960cc8f8) - Extra CRUD tutorial I've used
+Follow these instructions to get a local copy of the project up and running.
 
-<h2>Authors ✒️</h2>
+Prerequisites
 
-- **José Acosta Naranjo** - [GitHub](https://github.com/jooseacostaa)
+Git installed on your system
 
-<h2>Starting template 📄</h2>
-<p>I have used this template to guide me and see how to put certain things</p>
-(https://github.com/PurpleBooth/a-good-readme-template)
+Any modern web browser
+
+(Optional) Visual Studio Code
+
+Installation
+
+Clone the repository:
+
+git clone <project-url>
+
+
+Navigate into the project folder and open index.html in your browser.
+
+Updating the repository
+
+If the repository has been updated and you want to sync your local copy:
+
+git pull origin master
+
+🛠️ Technologies Used
+
+HTML5 — Structure and content
+
+CSS3 — Layout, Flexbox, animations and transitions
+
+JavaScript (ES6) — Interactivity and CRUD logic
+
+Visual Studio Code — Development environment
+
+🎨 Features
+
+Responsive header and layout
+
+Flexbox-based design
+
+CSS transitions and animations
+
+Client-side CRUD operations
+
+Clean and structured codebase for learning purposes
+
+🖇️ Acknowledgements & Resources
+
+The following resources were used as inspiration and learning references:
+
+AI Product Website Design
+ — UI inspiration
+
+Shields.io
+ — Status badge
+
+Deivchoi
+ — Responsive header tutorial
+
+CSS-Tricks
+ — Flexbox guide
+
+Manz.dev
+ — CSS transitions
+
+Paradigma Digital
+ — Animations & transitions
+
+DaniCode
+ — CRUD tutorial
+
+OnlineCurse
+ — CRUD tutorial
+
+Medium Article
+ — Extra CRUD reference
+
+✒️ Author
+
+José Acosta Naranjo
+🔗 GitHub Profile
+
+📄 README Template Reference
+
+This README was structured using the following template as a base:
+👉 https://github.com/PurpleBooth/a-good-readme-template
